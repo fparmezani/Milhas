@@ -1,0 +1,9 @@
+{
+  "notifyEmail": "fparmezani@gmail.com",
+  "airlines": ["azul", "latam", "smiles"],
+  "thresholds": {
+    "bonusPercentage": 50,
+    "pointsToMilesRatio": 2.0
+  },
+  "checkIntervalHours": 6
+}

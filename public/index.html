@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitor de Milhas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>✈ Monitor de Milhas</h1>
+      <p class="subtitle">Alertas automáticos de promoções de milhas aéreas</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="status-bar">
+      <div class="status-item">
+        <span class="label">Última verificação</span>
+        <span id="lastChecked" class="value">—</span>
+      </div>
+      <div class="status-item">
+        <span class="label">Limite de bônus</span>
+        <span id="threshold" class="value">—</span>
+      </div>
+      <div class="status-item">
+        <span class="label">Promoções ativas</span>
+        <span id="totalCount" class="value badge">0</span>
+      </div>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn active" data-airline="all">Todas</button>
+      <button class="filter-btn" data-airline="azul">Azul</button>
+      <button class="filter-btn" data-airline="latam">LATAM</button>
+      <button class="filter-btn" data-airline="smiles">Smiles</button>
+    </section>
+
+    <section id="promotionsContainer" class="promotions-grid">
+      <div class="empty-state" id="emptyState">
+        <p>Carregando promoções...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Atualizado automaticamente a cada 6 horas via GitHub Actions &nbsp;·&nbsp;
+       <a href="https://github.com/fparmezani/milhas" target="_blank">Ver código</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
